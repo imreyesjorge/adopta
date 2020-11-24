@@ -1,9 +1,10 @@
 html,
 body {
+  color: rgb(27, 59, 108);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +14,48 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.bannerBlob {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.photosBlob {
+  width: 35%;
+  height: 35vw;
+
+  position: absolute;
+  top: -5px;
+  right: 0;
+
+  object-fit: cover;
+  object-position: center;
+  mask-image: url("../public/Vector2.svg");
+  mask-size: 35vw 35vw;
+}
+
+header {
+  margin: 8rem 0 0 5rem;
+}
+
+header > h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+header > p {
+  font-size: 1.5rem;
+}
+
+.logo {
+  width: 100px;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }

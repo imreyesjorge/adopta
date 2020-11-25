@@ -18,6 +18,9 @@ a {
 
 .bannerBlob {
   width: 100%;
+  height: 350px;
+
+  object-fit: cover;
 
   position: absolute;
   top: 0;
@@ -39,23 +42,106 @@ a {
   mask-size: 35vw 35vw;
 }
 
+
 header {
+  width: 65%;
   margin: 8rem 0 0 5rem;
 }
 
 header > h1 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 header > p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+span {
+  color: #FF3291;
 }
 
 .logo {
   width: 100px;
-
+  
   position: absolute;
   top: 25px;
   left: 25px;
+}
+
+
+/* Phones */
+@media only screen and (max-width: 540px) {
+  .bannerBlob {
+    height: 500px;
+  }
+  
+  header {
+    width: 80%;
+    margin: 8rem 0 0 2rem;
+
+    text-align: center;
+  }
+  
+  header > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8rem;
+  }
+  
+  header > p {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Regular Screens */
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 40%;
+  }
+  
+  header > h1 {
+    font-size: 2.5rem;
+  }
+  
+  header > p {
+    font-size: 2rem
+  }
+}
+
+/* Touch Media */
+@media only screen and (max-width: 850px) {
+  header {
+    width: 80%;
+  }
+
+  .bannerBlob {
+    width: 120%;
+  }
+
+  .photosBlob {
+    display: none;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1300px) {
+  .photosBlob {
+    width: 20%;
+    height: 20vw;
+
+    mask-size: 20vw 20vw;
+  }
+}
+
+/* Extra Large Screens */
+@media only screen and (min-width: 1800px) {
+  header > h1 {
+    font-size: 3rem;
+  }
+
+  header > p {
+    font-size: 2rem;
+  }
 }

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   color: rgb(27, 59, 108);
@@ -5,6 +11,7 @@ body {
   margin: 0;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -18,7 +25,7 @@ a {
 
 .bannerBlob {
   width: 100%;
-  height: 350px;
+  height: 450px;
 
   object-fit: cover;
 
@@ -45,17 +52,23 @@ a {
 
 header {
   width: 65%;
+  height: 80vh;
+
   margin: 8rem 0 0 5rem;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
 
 header > h1 {
   font-size: 3rem;
-  margin-bottom: 6rem;
 }
 
 header > p {
   font-size: 2rem;
   font-weight: bold;
+
+  align-self: center;
 }
 
 span {
@@ -74,7 +87,7 @@ span {
 /* Phones */
 @media only screen and (max-width: 540px) {
   .bannerBlob {
-    height: 500px;
+    height: 600px;
   }
   
   header {
@@ -128,10 +141,10 @@ span {
 /* Large Screens */
 @media only screen and (min-width: 1300px) {
   .photosBlob {
-    width: 20%;
-    height: 20vw;
+    width: 25%;
+    height: 25vw;
 
-    mask-size: 20vw 20vw;
+    mask-size: 25vw 25vw;
   }
 }
 

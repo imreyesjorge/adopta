@@ -16,7 +16,7 @@ const home = () => {
 
           {/* Photos */}
           <img
-            src="https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGRvZ3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+            src="/dogs/guero.png"
             alt="A cute dog"
             className="photosBlob"
             id="blob"
